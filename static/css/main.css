@@ -1,0 +1,82 @@
+*{
+    xoutline: 1px solid lime;
+}
+
+/*Navigation*/
+@media (min-width: 992px){
+    .pd-menu-item{
+        border-right: 1px solid #666;
+    }
+}
+
+/*Title*/
+div.pd-top{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pd-top h1{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/*Events (left/right side)*/
+h2{
+    text-align: center;
+}
+
+div.pd-side{
+    padding-top: 120px;
+}
+
+.pd-side li{
+    padding: 24px;
+    background: #f4f4f4;
+    border-radius: 15px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+ul{
+    padding-left:0px;
+}
+
+/*Events icons*/
+.pd-championships{
+    color:yellow;
+}
+
+.pd-workshops{
+    color:blue;
+}
+
+.pd-others{
+    color:blueviolet;
+}
+
+/*field: 'City'*/
+select{
+    margin-bottom: 24px;
+}
+
+/*Footer*/
+div.pd-footer{
+    background: pink;
+    min-height: 100px;
+    text-align: center;
+}
+
+.pd-footer p{
+    margin-top:12px;
+}
+
+div.pd-footer-col {
+    border-right: 1px solid #666;
+}
+
+.pd-footer-icon{
+   
+    display: block;
+    font-size: 36px;
+}

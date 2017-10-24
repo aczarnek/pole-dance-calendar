@@ -1,0 +1,70 @@
+{%extends 'layout.html'%}
+{%block content%}
+
+<!--Title-->
+<div class="row pd-top">
+    <h1 class="pd-title">POLE-DANCE CALENDAR</h1>
+</div>
+<!--End title-->
+
+
+<div class="row">
+
+    <!--Upcoming events-->
+    <div class="col-lg-3 pd-side">
+        <h2>UPCOMING EVENTS</h2>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+    </div>
+    <!--End upcoming events-->
+
+    <!--Calendar-->
+    <div class="col-lg-6">
+        <img src="{{url_for('static', filename='images/calendar1.jpg')}}" class="img-fluid" alt="Responsive image">
+    </div>
+    <!--End calendar-->
+
+    <!--User events-->
+    <div class="col-lg-3 pd-side">
+        <h2>EVENTS</h2>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="championships" aria-label="...">championships
+                <i class="fa fa-star pd-championships" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="workshops" aria-label="...">workshops
+                <i class="fa fa-star pd-workshops" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="other" aria-label="...">other
+                <i class="fa fa-star pd-others" aria-hidden="true"></i>
+            </label>
+        </div>
+
+        <select class="form-control">
+            <option>City</option>
+        </select>
+
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+
+    </div>
+    <!--End user events-->  
+
+</div><!--End of row-->
+
+{%endblock%}   

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <!--Bootsrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <!--Fonts-->
+
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS file-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+
+    <title>Pole-dance calendar</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link text-center pd-menu-item" href="#"><i class="fa fa-plus" aria-hidden="true"></i> Add event</a>
+                    <a class="nav-item nav-link text-center pd-menu-item" href="#">Sign in</a>
+                    <a class="nav-item nav-link text-center" href="#">Sign up</a>
+                </div>
+            </div>
+        </nav>
+        <!--End navigation-->
+
+        {%block content%}
+
+        {%endblock%}    
+
+        <!--Footer-->
+        <div class="row pd-footer">
+
+            <div class="col-lg-3 pd-footer-col">
+                <p>some information about the page</p>
+                <p>© 2017 Developed by ...</p>
+            </div>
+
+            <div class="col-lg-3 pd-footer-col">
+                <span class="pd-footer-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                <p>Email: aaa@gmail.com</p>
+            </div>
+
+            <div class="col-lg-6">     
+            </div>
+        </div>
+        <!--End footer-->
+
+    </div><!--End container-->
+
+    <!--JS, Popper.js, and jQuery for Bootsrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
