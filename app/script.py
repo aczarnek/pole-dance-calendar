@@ -10,3 +10,9 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+<<<<<<< HEAD:script.py
+||||||| merged common ancestors
+    
+=======
+    
+>>>>>>> 7374196168500127570156ba6e47f3dfa46bba2b:calendar/script.py
