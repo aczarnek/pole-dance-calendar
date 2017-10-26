@@ -5,5 +5,5 @@ All events connected with pole-dance such as workshops, competitions etc.
 
 Sample view:
 
-![alt text](https://raw.githubusercontent.com/aczarnek/pole-dance-calendar/master/mockups/After city, type of event request.png)
+![alt text](https://github.com/aczarnek/pole-dance-calendar/blob/master/mockups/Base%20mockup.png)
 
