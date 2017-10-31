@@ -14,6 +14,7 @@ drop table if exists events;
 create table events (
     id integer primary key autoincrement,
     event_name text not null,
+    event_type text not null,
     event_date_from integer not null,
     event_date_to integer not null,
     organizers text not null,
