@@ -13,8 +13,10 @@
     <!--Upcoming events-->
     <div class="col-lg-3 pd-side">
         <h2>UPCOMING EVENTS</h2>
-        <ul>
-            <li>First</li>
+        <ul class="events">
+            {%  for event in events %}
+            <li><h2>{{ event.event_name }}</h2>{{ event.event_type }}</li>
+            {% endfor %}
             <li>Second</li>
             <li>Third</li>
         </ul>

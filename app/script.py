@@ -9,7 +9,7 @@ app.config.update(dict(
     DATABASE=os.path.join(app.root_path, 'app.db'),
     SECRET_KEY='development key',
     USERNAME='admin',
-    PASSWORD='ania'
+    PASSWORD='default'
 ))
 app.config.from_envvar('APP_SETTINGS', silent=True)
 
@@ -54,7 +54,11 @@ def close_db(error):
 
 @app.route('/')
 def home():
-    return render_template('main.html')
+    db = get_db()
+    cur = db.execute('select event_name, event_type from events order by id desc')
+    events = cur.fetchall()
+    return render_template('main.html', events=events)
+
 
 
 if __name__ == "__main__":
