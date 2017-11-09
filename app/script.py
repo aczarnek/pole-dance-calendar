@@ -55,7 +55,7 @@ def close_db(error):
 @app.route('/')
 def home():
     db = get_db()
-    cur = db.execute('select event_name, event_type from events order by id desc')
+    cur = db.execute('select event_name, event_type from event order by id desc')
     events = cur.fetchall()
     return render_template('main.html', events=events)
 
