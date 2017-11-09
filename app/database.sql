@@ -17,7 +17,7 @@ create table Event (
     EndTime integer not null,
     Organizer text not null,
     Description text not null,
-    foreign key(LocalizationId) references Localization(Id)
+
 
 );
 
@@ -30,4 +30,5 @@ create table Localization (
   AddressLine2 text not null,
   Latitude real not null,
   Longitude real not null
+  foreign key(EventId) references Event(Id)
 )
