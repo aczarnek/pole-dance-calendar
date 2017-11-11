@@ -61,7 +61,9 @@
             </div>
 
             <select class="form-control">
-                <option>City</option>
+                {% for city in cities %}
+                <option>{{ city.City }}</option>
+                {% endfor %}
             </select>
 
             <ul class="test">
