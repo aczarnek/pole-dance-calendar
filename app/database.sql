@@ -1,26 +1,33 @@
 --Users table
-
-drop table if exists users;
-create table users (
-    id integer primary key autoincrement,
-    username_field text not null,
-    email_address text not null,
-    user_password text not null,
-    confirm_user_password text not null
+drop table if exists User;
+create table User (
+    Id integer primary key autoincrement,
+    Name text not null,
+    Email text not null,
+    Password text not null
 );
 
 --Events table
-drop table if exists events;
-create table events (
-    id integer primary key autoincrement,
-    event_name text not null,
-    event_type text not null,
-    event_date_from integer not null,
-    event_date_to integer not null,
-    organizers text not null,
-    description text not null,
-    place text not null,
-    latitude real not null,
-    longitude real not null
+drop table if exists Event;
+create table Event (
+    Id integer primary key autoincrement,
+    Name text not null,
+    Type text not null,
+    StartTime integer not null,
+    EndTime integer not null,
+    Organizer text not null,
+    Description text not null,
+    LocalizationId integer,
+    foreign key(LocalizationID) references Localization(Id)
 );
 
+--Localization table
+drop table if exists Localization;
+create table Localization (
+  Id integer primary key autoincrement,
+  City text not null,
+  AddressLine1 text not null,
+  AddressLine2 text not null,
+  Latitude real not null,
+  Longitude real not null
+)

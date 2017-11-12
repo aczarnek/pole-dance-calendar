@@ -1,8 +1,27 @@
 *{
-    outline: 1px solid lime;
+    xoutline: 1px solid red;
+}
+body{
+    background-size:100% auto;
+    background-color: #0f1428;
+    font-family: 'Tenor Sans', sans-serif;
+}
+@media (min-width: 992px) {
+    body {
+        background-image: url("../images/kwiatek.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.container-fluid{
+    padding: 0;
 }
 
 /*Navigation*/
+.pd-navbar{
+    background-color: #ccaf69;
+}
 @media (min-width: 992px){
     .pd-menu-item{
         border-right: 1px solid #666;
@@ -19,27 +38,72 @@ div.pd-top{
     display: block;
     margin: auto;
     text-align: center;
+    color: #ccaf69;
+    font-family: 'Federo', sans-serif;
+    font-size: 85px;
+    text-shadow: 2px 2px 4px #DFC17A;
 }
 
 /*Events (left/right side)*/
 h2{
     text-align: center;
+    color: #ccaf69;
+}
+h4{
+    margin: 6px 0 0 0;
+    color: white;
+    font-size: 21px;
 }
 
-div.pd-side{
-    padding-top: 120px;
+h5{
+    color: #B0E0E6;
+    font-size: 14px
+
+
+.pd-event-who{
+    font-size: 14px;
+    color: #95F12C;
 }
 
 .pd-side li{
-    padding: 24px;
-    background: #f4f4f4;
+    padding: 12px 24px;
+    background: rgba(204,175,105,0.75);
     border-radius: 15px;
     margin-bottom: 6px;
     display: block;
 }
 
+.pd-side li:nth-child(1) {
+     box-shadow: 0px 0px 10px #DFC17A;
+}
+
+.pd-side li:nth-child(2) {
+    box-shadow: inset 0 0 10px #DFC17A;
+}
+@media(min-width: 992px) {
+    .pd-side-left li{
+        margin: 0 6px 6px 12px;
+    }
+    .pd-side-right li{
+        margin: 0 12px 6px 6px;
+    }
+}
 ul{
     padding-left:0px;
+}
+
+.form-check-label{
+    color: #ccaf69;
+    font-size: 21px;
+}
+
+.form-check-input{
+    margin-top: .75rem;
+}
+
+select.form-control{
+    width:75%;
+    margin-bottom: 12px;
 }
 
 /*Events icons*/
@@ -54,29 +118,52 @@ ul{
 .pd-others{
     color:blueviolet;
 }
-
-/*field: 'City'*/
-select{
-    margin-bottom: 24px;
+.pd-site-left-inner{
+    margin-left:24px;
 }
+/*field: 'City'*/
+
 
 /*Footer*/
 div.pd-footer{
-    background: pink;
-    min-height: 100px;
+    min-height: 20px;
     text-align: center;
+    background: #ccaf69;
+    position: relative;
 }
 
-.pd-footer p{
+
+div.pd-footer-copy {
+    margin: 12px;
+    border-right: 1px solid #666;
+    color:rgba(0,0,0,.7);
+
+}
+
+div.pd-footer-copy p:nth-child(1){
+    font-size: 18px;
+    margin-top:12px;
+    margin-bottom: 6px;
+}
+div.pd-footer-copy p:nth-child(even){
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.pd-footer-icon {
+    display: block;
+    font-size: 28px;
+    opacity: .9;
+    margin-top: 4px;
+}
+.pd-footer-contact{
     margin-top:12px;
 }
-
-div.pd-footer-col {
-    border-right: 1px solid #666;
+.pd-footer-contact p{
+    margin-bottom: 0;
+}
+.pd-footer-contact a{
+    text-decoration: none;
+    color:rgba(0,0,0,.7);
 }
 
-.pd-footer-icon{
-   
-    display: block;
-    font-size: 36px;
-}
