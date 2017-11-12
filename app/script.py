@@ -1,18 +1,26 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session, g, redirect, url_for, abort, flash
+import sqlite3
+import os
+from config import database
+from database import *
 
-app = Flask(__name__)
+app=Flask(__name__)
+app.config.from_object(__name__)
+
+app.config.update(dict(database))
+
+app.config.from_envvar('APP_SETTINGS', silent=True)
 
 
 @app.route('/')
 def home():
-    return render_template('main.html')
+    db = get_db()
+    cur = db.execute('select Name, Type from Event limit 5 order by Id desc')
+    cur2=db.execute('select distinct City from Localization order by City')
+    events = cur.fetchall()
+    cities=cur2.fetchall()
+    return render_template('main.html', events=events, cities=cities)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-<<<<<<< HEAD:script.py
-||||||| merged common ancestors
-    
-=======
-    
->>>>>>> 7374196168500127570156ba6e47f3dfa46bba2b:calendar/script.py
+     app.run(debug=True)
