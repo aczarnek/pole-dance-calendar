@@ -1,0 +1,26 @@
+{%extends 'layout.html'%}
+{%block content%}
+
+
+    <h1>Registration</h1>
+    <h3>Please fill the fields and add your event</h3>
+
+
+
+    <div class="message">
+        {{text | safe}}
+    </div>
+
+
+    <form action="{{ url_for('registrationsuccess') }}" method="POST">
+        <input title="Your username" placeholder="Username" type="text"  name="username_field" required> </br>
+        <input title="Your email adress" placeholder="Enter your email" type="email" name="email_address" required> </br>
+        <input title="Your password" placeholder="Enter your password" type="password" name="user_password" required></br>
+        <input title="Confirm your password" placeholder="Confirm password" type="password" name="confirm_user_password" required></br>
+        <button type="submit"> Register </button>
+    </form>
+    {% include btn ignore missing %}
+
+                    
+
+{%endblock%}
