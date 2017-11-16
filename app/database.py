@@ -8,6 +8,7 @@ app.config.from_object(__name__)
 app.config.update(database)
 app.config.from_envvar('APP_SETTINGS', silent=True)
 
+
 def connect_db():
     """Connects to the specific database."""
     rv = sqlite3.connect(app.config['DATABASE'])
@@ -41,6 +42,7 @@ def close_db(error):
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
+
 #sql variables to main view
 upcoming_events='select Name, StartTime, Organizer, City from Event inner join Localization ' \
                 'on Localization.Id = Event.LocalizationId order by StartTime'
@@ -60,3 +62,4 @@ city_option='select distinct City from Localization order by City'
 # insert_db(2,'2017-11-19T12:00:00+0100', 'Pole Creativity - niezwykłe warsztaty teatralno-taneczne', 'Competition','2017-11-19T12:00:00+0100', 'Pole', 'aaa',1)
 # insert_db(3,'2017-12-10T11:00:00+0100', 'Kasia Kwaśniewicz w Feniks Studio / 10 grudnia', 'Championships','2017-12-10T12:00:00+0100', 'Vertical', 'bbb', 2)
 # insert_db(4,'2017-12-09T12:00:00+0100', 'FutureNet Pole Dance Championship','Championships','2017-12-09T12:00:00+0100', 'pink Puma', 'ccc', 3)
+
