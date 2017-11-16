@@ -55,14 +55,16 @@ h4{
     font-size: 21px;
 }
 
-h5{
+h5 {
     color: #B0E0E6;
-    font-size: 14px
+    font-size: 14px;
+}
 
 
 .pd-event-who{
     font-size: 14px;
     color: #95F12C;
+    text-transform: uppercase;
 }
 
 .pd-side li{
@@ -166,4 +168,3 @@ div.pd-footer-copy p:nth-child(even){
     text-decoration: none;
     color:rgba(0,0,0,.7);
 }
-

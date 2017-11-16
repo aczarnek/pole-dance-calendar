@@ -41,6 +41,13 @@ def close_db(error):
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
+#sql variables to main view
+upcoming_events='select Name, StartTime, Organizer, City from Event inner join Localization ' \
+                'on Localization.Id = Event.LocalizationId order by StartTime'
+city_option='select distinct City from Localization order by City'
+
+
+
 
 # def insert_db(Id,StartTime, Name, Type, EndTime, Organizer, Description, LocalizationId):
 #     conn=sqlite3.connect("app.db")

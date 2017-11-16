@@ -16,11 +16,8 @@
             <h2>UPCOMING EVENTS</h2>
             <ul class="events">
                 {%  for event in events %}
-                    <li><h5>{{ event.Name }}{{ event.StartTime }}</h5><h4>{{ event.Organizer }}</h4><span class="pd-event-who">{{ event.Type}}</span></li>
+                    <li><h5>{{ event.StartTime }} {{ event.City }}</h5><h4>{{ event.Name }}</h4><span class="pd-event-who">{{ event.Organizer }}</span></li>
                  {% endfor %}
-                <li><h5>11.11.2017r. Radom</h5><h4>Pole dance workshop</h4><span class="pd-event-who"> PINK PUMA</span> </li>
-                <li><h5>13.11.2017r. Opole</h5> <h4>Exotic Weekend w Opolu!</h4><span class="pd-event-who"> MAGDA BENG i Kaja Waseńczuk!</span></li>
-                <li><h5>13.11.2017r. Opole</h5> <h4>Exotic Weekend w Opolu!</h4><span class="pd-event-who"> MAGDA BENG i Kaja Waseńczuk!</span></li>
 
             </ul>
         </div>
@@ -62,7 +59,7 @@
 
             <select class="form-control">
                 {% for city in cities %}
-                <option>{{ city.Description }}</option>
+                <option>{{ city.City }}</option>
                 {% endfor %}
             </select>
 
