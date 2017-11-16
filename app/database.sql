@@ -20,13 +20,13 @@ create table if not exists Event (
     EndTime integer not null,
     Organizer text not null,
     Description text not null,
-    LocalizationId integer,
-    foreign key(LocalizationId) references Localization(Id),
+    LocationId integer,
+    foreign key(LocationId) references Location(Id),
     foreign key(EventTypeId) references EventType(Id)
 );
 
 --Localization table
-create table if not exists Localization (
+create table if not exists Location (
   Id integer primary key autoincrement,
   City text not null,
   AddressLine1 text not null,

@@ -2,7 +2,7 @@ import sqlite3
 from flask import Flask, g
 from .config import database
 
-app=Flask(__name__)
+app = Flask(__name__)
 app.config.from_object(__name__)
 
 app.config.update(database)
@@ -42,9 +42,12 @@ def close_db(error):
         g.sqlite_db.close()
 
 #sql variables to main view
-upcoming_events='select Name, StartTime, Organizer, City from Event inner join Localization ' \
-                'on Localization.Id = Event.LocalizationId order by StartTime'
-city_option='select distinct City from Localization order by City'
+
+
+queries = {
+    'upcoming_events':'select Name, StartTime, Organizer, City from Event inner join Location on Location.Id = Event.LocationId order by StartTime',
+    'city_option':'select distinct City from Location order by City'
+}
 
 
 
