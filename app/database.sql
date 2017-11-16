@@ -5,6 +5,7 @@ create table if not exists User (
     Email text not null,
     Password text not null
 );
+
 --Type of event table
 create table if not exists EventType (
   Id integer primary key,
@@ -34,3 +35,4 @@ create table if not exists Location (
   Latitude real not null,
   Longitude real not null
 );
+
