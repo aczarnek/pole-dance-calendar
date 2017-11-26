@@ -1,40 +1,42 @@
-*{
+* {
     xoutline: 1px solid red;
 }
-body{
-    background-size:100% auto;
+
+body {
+    background-size: 100% auto;
     background-color: #0f1428;
     font-family: 'Tenor Sans', sans-serif;
 }
+
 @media (min-width: 992px) {
     body {
-        background-image: url("../images/kwiatek.png");
+        background: #0f1428 url("../images/kwiatek.png") no-repeat;
         background-size: cover;
-        background-repeat: no-repeat;
     }
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0;
 }
 
 /*Navigation*/
-.pd-navbar{
+.pd-navbar {
     background-color: #ccaf69;
 }
-@media (min-width: 992px){
-    .pd-menu-item{
+
+@media (min-width: 992px) {
+    .pd-menu-item {
         border-right: 1px solid #666;
     }
 }
 
 /*Title*/
-div.pd-top{
+div.pd-top {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.pd-top h1{
+.pd-top h1 {
     display: block;
     margin: auto;
     text-align: center;
@@ -45,108 +47,114 @@ div.pd-top{
 }
 
 /*Events (left/right side)*/
-h2{
+h2 {
     text-align: center;
     color: #ccaf69;
 }
-h4{
+
+h4 {
     margin: 6px 0 0 0;
     color: white;
     font-size: 21px;
 }
 
-h5{
+h5 {
     color: #B0E0E6;
-    font-size: 14px
-
-
-.pd-event-who{
     font-size: 14px;
-    color: #95F12C;
 }
 
-.pd-side li{
+.pd-event-who {
+    font-size: 14px;
+    color: #95F12C;
+    text-transform: uppercase;
+}
+
+.pd-side li {
     padding: 12px 24px;
-    background: rgba(204,175,105,0.75);
+    background: rgba(204, 175, 105, 0.75);
     border-radius: 15px;
     margin-bottom: 6px;
     display: block;
 }
 
 .pd-side li:nth-child(1) {
-     box-shadow: 0px 0px 10px #DFC17A;
+    box-shadow: 0 0 10px #DFC17A;
 }
 
 .pd-side li:nth-child(2) {
     box-shadow: inset 0 0 10px #DFC17A;
 }
-@media(min-width: 992px) {
-    .pd-side-left li{
+
+@media (min-width: 992px) {
+    .pd-side-left li {
         margin: 0 6px 6px 12px;
     }
-    .pd-side-right li{
+
+    .pd-side-right li {
         margin: 0 12px 6px 6px;
     }
 }
-ul{
-    padding-left:0px;
+
+ul {
+    padding-left: 0;
 }
 
-.form-check-label{
+.form-check-label {
     color: #ccaf69;
     font-size: 21px;
 }
 
-.form-check-input{
+.form-check-input {
     margin-top: .75rem;
 }
 
-select.form-control{
-    width:75%;
+select.form-control {
+    width: 75%;
     margin-bottom: 12px;
 }
 
 /*Events icons*/
-.pd-championships{
-    color:yellow;
+.pd-championships {
+    color: yellow;
 }
 
-.pd-workshops{
-    color:blue;
+.pd-workshops {
+    color: blue;
 }
 
-.pd-others{
-    color:blueviolet;
+.pd-others {
+    color: blueviolet;
 }
-.pd-site-left-inner{
-    margin-left:24px;
+
+.pd-site-left-inner {
+    margin-left: 24px;
 }
+
 /*field: 'City'*/
 
-
 /*Footer*/
-div.pd-footer{
+div.pd-footer {
     min-height: 20px;
     text-align: center;
     background: #ccaf69;
     position: relative;
 }
 
-
 div.pd-footer-copy {
     margin: 12px;
     border-right: 1px solid #666;
-    color:rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
 
 }
 
-div.pd-footer-copy p:nth-child(1){
+div.pd-footer-copy p:nth-child(1) {
     font-size: 18px;
-    margin-top:12px;
+    margin-top: 12px;
     margin-bottom: 6px;
 }
-div.pd-footer-copy p:nth-child(even){
-    margin-bottom: 0px;
+
+div.pd-footer-copy p:nth-child(even) {
+    margin-bottom: 0;
     font-size: 14px;
 }
 
@@ -156,14 +164,16 @@ div.pd-footer-copy p:nth-child(even){
     opacity: .9;
     margin-top: 4px;
 }
-.pd-footer-contact{
-    margin-top:12px;
-}
-.pd-footer-contact p{
-    margin-bottom: 0;
-}
-.pd-footer-contact a{
-    text-decoration: none;
-    color:rgba(0,0,0,.7);
+
+.pd-footer-contact {
+    margin-top: 12px;
 }
 
+.pd-footer-contact p {
+    margin-bottom: 0;
+}
+
+.pd-footer-contact a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+}
