@@ -54,10 +54,10 @@ queries = {
 
 
 
-# def insert_db(Id,StartTime, Name, Type, EndTime, Organizer, Description, LocalizationId):
+# def insert_db(Id, Name, EventTypeId, StartTime, EndTime, Organizer, Description, LocationId):
 #     conn=sqlite3.connect("app.db")
 #     cur=conn.cursor()
-#     cur.execute("INSERT INTO Event VALUES (?,?,?,?,?,?,?,?)",(Id,StartTime,Name, Type,  EndTime, Organizer, Description, LocalizationId))
+#     cur.execute("INSERT INTO Event VALUES (?,?,?,?,?,?,?,?)",(Id, Name, EventTypeId, StartTime, EndTime, Organizer, Description, LocationId))
 #     conn.commit()
 #     conn.close()
 
