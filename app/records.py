@@ -34,7 +34,7 @@ for row in rows:
 
 j = json.dumps(objects_list)
 objects_file = '../records_json.json'
-with open(objects_file, 'r+') as plik:
-    plik.write(j)
+with open(objects_file, 'r+') as file:
+    file.write(j)
 
 conn.close()
