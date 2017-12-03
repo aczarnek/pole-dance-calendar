@@ -12,6 +12,13 @@ def home():
     email='poledancecalendar@gmail.com'
     return render_template('main.html', events=events, cities=cities, email=email)
 
+@app.route('/data')
+def return_data():
+    # start_date = request.args.get('start', '')
+    # end_date = request.args.get('end', '')
+
+    with open("events.json", "r") as input_data:
+        return input_data.read()
 
 if __name__ == "__main__":
     app.run(debug=True)

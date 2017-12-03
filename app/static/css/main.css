@@ -177,3 +177,10 @@ div.pd-footer-copy p:nth-child(even) {
     text-decoration: none;
     color: rgba(0, 0, 0, .7);
 }
+#calendar {
+		max-width: 700px;
+		margin: 10px auto;
+		padding: 0 10px;
+		color: #dfc17a;
+}
+
