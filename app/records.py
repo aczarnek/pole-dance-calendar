@@ -9,7 +9,7 @@ import collections
 
 conn = sqlite3.connect('app.db')
 cursor = conn.cursor()
-cursor.execute('select Name, StartTime, EndTime, Color from Event '
+cursor.execute('select Name, StartTime, EndTime, Type from Event '
                'inner join EventType on EventType.Id = Event.EventTypeId order by StartTime;')
 rows = cursor.fetchall()
 
@@ -28,7 +28,7 @@ for row in rows:
     d['title'] = row[0]
     d['start'] = row[1]
     d['end'] = row[2]
-    d['color'] = row[3]
+    d['className'] = row[3]
 
     objects_list.append(d)
 
