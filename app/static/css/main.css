@@ -184,3 +184,66 @@ div.pd-footer-copy p:nth-child(even) {
 		color: #dfc17a;
 }
 
+.modal-header img{
+width: 100px;
+height: 100px;
+}
+
+.title {
+    position:relative;
+}
+
+.modal-header h5 {
+    font-size:42px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: right;
+    color: rgb(244, 66, 122);
+    text-shadow: 2px 2px rgb(165, 140, 140);
+    opacity: .4;
+}
+
+.modal-date {
+color:black;}
+.modal-description{
+color: black;
+}
+
+.modal-description, .modal-organizer {
+line-height: 200%;
+}
+
+.location-icon {
+width: 20px;
+height: 20px;
+margin-bottom: 6px;
+}
+
+#simple-map {
+color: black;
+background: blue;
+}
+
+.white {
+color: white;
+}
+
+.map {
+float: right;
+}
+
+.Championships {
+background: red;
+}
+
+.Workshops {
+background: blue;
+}
+
+.Others {
+background: yellow;
+}
+.fc-time {
+   display : none;
+}

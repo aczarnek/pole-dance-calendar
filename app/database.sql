@@ -35,4 +35,3 @@ create table if not exists Location (
   Latitude real not null,
   Longitude real not null
 );
-
