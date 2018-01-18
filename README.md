@@ -14,13 +14,10 @@ Pole-dance calendar will be available for all types of devices: mobiles, laptops
 The project has been extensively documented in the [Wiki](https://github.com/aczarnek/pole-dance-calendar/wiki). Here is a brief overview of what can be found there. Click on the desired links for more information.
 
 * [Features](https://github.com/aczarnek/pole-dance-calendar/wiki/Features)
-
 * [Gallery](https://github.com/aczarnek/pole-dance-calendar/wiki/Gallery)
-
 * Development 
     * [Local Deployment](https://github.com/aczarnek/pole-dance-calendar/wiki/Local-Deployment)
     * [Database Initialization](https://github.com/aczarnek/pole-dance-calendar/wiki/Database-initialization)
-
 * Resources
     * [Pole Dance Events](https://github.com/aczarnek/pole-dance-calendar/wiki/Pole-Dance-Events)
     * [Wireframes](https://github.com/aczarnek/pole-dance-calendar/wiki/Wireframes)
