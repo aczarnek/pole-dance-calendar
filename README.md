@@ -1,13 +1,12 @@
 # **Pole-dance calendar**
 
-This is a project of pole-dance calendar which shows you what events are taking place in your area. 
-All events connected with pole-dance such as workshops, competitions etc.
-Pole-dance calendar will be available for all types of devices: mobiles, laptops, tablets.
+Pole Dance Calendar is an application that provides information about various pole dancing events. Intended to be a one-place access to pole dancing events taking place globally, the application solves the problem of having to check various websites or social media platforms to stay updated about events. In the current state however, it only consists of events hosted in Poland. These events could be championships, workshops or in other formats.
+The application is designed to have responsive design and hence functions well on devices such as mobiles, laptops and tablets as well.
 
 ## Requirements
 
 * Python 
-* All the packages from reguirements.txt file
+* All the packages from the requirements.txt file
 
 ## Documentation
 
@@ -22,5 +21,6 @@ The project has been extensively documented in the [Wiki](https://github.com/acz
     * [Pole Dance Events](https://github.com/aczarnek/pole-dance-calendar/wiki/Pole-Dance-Events)
     * [Wireframes](https://github.com/aczarnek/pole-dance-calendar/wiki/Wireframes)
 
-### License
+## License
+
 This project is licensed under the [MIT License](https://github.com/aczarnek/pole-dance-calendar/blob/master/LICENSE).
