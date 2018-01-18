@@ -7,22 +7,23 @@ Pole-dance calendar will be available for all types of devices: mobiles, laptops
 ## Requirements
 
 * Python 
-* all the packages from reguirements.txt file
+* All the packages from reguirements.txt file
 
-## Usage
+## Documentation
 
-### Basic view 
-Here you can see:
-* upcoming events in current month, 
-* monthly calendar with colorful pins depend on type of an event, 
-* search options, so you can choose the type of the event and place
+The project has been extensively documented in the [Wiki](https://github.com/aczarnek/pole-dance-calendar/wiki). Here is a brief overview of what can be found there. Click on the desired links for more information.
 
-![alt text](https://github.com/aczarnek/pole-dance-calendar/blob/master/mockups/Base%20mockup.png)
+* [Features](https://github.com/aczarnek/pole-dance-calendar/wiki/Features)
 
-### Event view
-This is a mockup while the user click on one of the events.
+* [Gallery](https://github.com/aczarnek/pole-dance-calendar/wiki/Gallery)
 
-![alt text](https://github.com/aczarnek/pole-dance-calendar/blob/master/mockups/After%20click%20on%20one%20of%20the%20upcoming%20events%20or%20events(on%20teh%20right%20side)%20or%20on%20the%20pin.png)
+* Development 
+    * [Local Deployment](https://github.com/aczarnek/pole-dance-calendar/wiki/Local-Deployment)
+    * [Database Initialization](https://github.com/aczarnek/pole-dance-calendar/wiki/Database-initialization)
+
+* Resources
+    * [Pole Dance Events](https://github.com/aczarnek/pole-dance-calendar/wiki/Pole-Dance-Events)
+    * [Wireframes](https://github.com/aczarnek/pole-dance-calendar/wiki/Wireframes)
 
 ### License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/aczarnek/pole-dance-calendar/blob/master/LICENSE).
