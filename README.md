@@ -1,30 +1,27 @@
 # **Pole-dance calendar**
 
-This is a project of pole-dance calendar which shows you what events are taking place in your area. 
-All events connected with pole-dance such as workshops, competitions etc.
-Pole-dance calendar will be available for all types of devices: mobiles, laptops, tablets.
+Pole Dance Calendar is an application that provides information about various pole dancing events. Intended to be a one-place access to pole dancing events taking place globally, the application solves the problem of having to check various websites or social media platforms to stay updated about events. In the current state however, it only consists of events hosted in Poland. These events could be championships, workshops or in other formats.
+The application is designed to have responsive design and hence functions well on devices such as mobiles, laptops and tablets as well.
 
 ## Requirements
 
 * Python 
-* all the packages from reguirements.txt file
+* All the packages from the requirements.txt file
 
-## Usage
+## Documentation
 
-### Basic view 
-Here you can see:
-* upcoming events in current month, 
-* monthly calendar with colorful pins depend on type of an event, 
-* search options, so you can choose the type of the event and place
+The project has been extensively documented in the [Wiki](https://github.com/aczarnek/pole-dance-calendar/wiki). Here is a brief overview of what can be found there. Click on the desired links for more information.
 
-![alt text](https://github.com/aczarnek/pole-dance-calendar/blob/readme/mockups/Base%20mockup.png)
+* [Features](https://github.com/aczarnek/pole-dance-calendar/wiki/Features)
+* [Gallery](https://github.com/aczarnek/pole-dance-calendar/wiki/Gallery)
+* Development 
+    * [Local Deployment](https://github.com/aczarnek/pole-dance-calendar/wiki/Local-Deployment)
+    * [Database Initialization](https://github.com/aczarnek/pole-dance-calendar/wiki/Database-initialization)
+* Resources
+    * [Pole Dance Events](https://github.com/aczarnek/pole-dance-calendar/wiki/Pole-Dance-Events)
+    * [Wireframes](https://github.com/aczarnek/pole-dance-calendar/wiki/Wireframes)
 
-
-
-### Event view
-This is a mockup while the user click on one of the events.
-
-![alt text](https://github.com/aczarnek/pole-dance-calendar/blob/readme/mockups/After%20click%20on%20one%20of%20the%20upcoming%20events%20or%20events(on%20teh%20right%20side)%20or%20on%20the%20pin.png)
 
 ### License
-This project is licensed under the MIT License.
+
+This project is licensed under the [MIT License](https://github.com/aczarnek/pole-dance-calendar/blob/master/LICENSE).
