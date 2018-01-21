@@ -28,7 +28,7 @@
     <script src="{{ url_for('static', filename='js/fullcalendar.min.js') }}"></script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKj9XmbjNFhhnZonh5tb76rdU_VUSS6jU"></script>-->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-    
+
     <title>Pole-dance calendar</title>
 
 </head>
@@ -42,11 +42,11 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link text-center pd-menu-item" href="#"><i class="fa fa-plus" aria-hidden="true"></i> Add event</a>
-                    <a class="nav-item nav-link text-center pd-menu-item" href="#">Sign in</a>
-                    <a class="nav-item nav-link text-center" href="#">Sign up</a>
+                    <a class="nav-item nav-link text-center pd-menu-item " href="#" data-toggle="tooltip" data-placement="bottom" title="Available soon"><i class="fa fa-plus" aria-hidden="true"></i> Add event</a>
+                    <a class="nav-item nav-link text-center pd-menu-item" href="#" data-toggle="tooltip" data-placement="bottom" title="Available soon">Sign in</a>
+                    <a class="nav-item nav-link text-center" href="#" data-toggle="tooltip" data-placement="bottom" title="Available soon">Sign up</a>
                 </div>
             </div>
         </nav>
@@ -54,7 +54,7 @@
 
         {%block content%}
 
-        {%endblock%}    
+        {%endblock%}
 
         <!--Footer-->
 
@@ -71,7 +71,7 @@
                 <p><a href="mailto:{{ email }}">Contact: poledancecalendar@gmail.com</a></p>
             </div>
 
-            <div class="col-lg-6">     
+            <div class="col-lg-6">
             </div>
         </div>
         <!--End footer-->
