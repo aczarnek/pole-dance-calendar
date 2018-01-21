@@ -3,12 +3,13 @@ $(document).ready(function() {
         header: {
             left: 'prev,next today',
             center: 'title',
-            right: 'month'
+            right: 'month,agendaWeek,agendaDay'
         },
+        contentHeight: 600,
         defaultDate: Date.now(),
         firstDay: 1,
         editable: false,
-        eventLimit: true,
+        eventLimit: 4,
         navLinks: true,
         events: {
             url: 'data',
@@ -24,7 +25,7 @@ $(document).ready(function() {
                         cal_modal.find('div.modal-header').addClass(calEvent.className[0]);
                         cal_modal.find('h5').empty().append(calEvent.className);
                         cal_modal.find('h2').empty().append(calEvent.title);
-                        cal_modal.find('h4').empty().append(calEvent.start.format('YYYY-MM-DD HH:mm'), ' ', calEvent.organizer);
+                        cal_modal.find('h4').empty().append('<i class="fa fa-calendar" aria-hidden="true"></i> ', calEvent.start.format('YYYY-MM-DD HH:mm'), ' ', calEvent.organizer);
                         cal_modal.find('p.modal-description').empty().append(calEvent.description.replace(/\n/g, "<br />"));
                         cal_modal.find('p.modal-organizer').empty().append(calEvent.organizer);
                         cal_modal.find('span.address').empty()
@@ -114,7 +115,7 @@ $(document).ready(function() {
                         modal.find('div.value.Type').addClass('modal-header');
                         modal.find('h5').empty().append(value.Type);
                         modal.find('h2').empty().append(value.Name);
-                        modal.find('h4').empty().append(value.Start.replace('T', ' '), ' ', value.Organizer);
+                        modal.find('h4').empty().append('<i class="fa fa-calendar" aria-hidden="true"></i> ', value.Start.replace('T', ' '), ' ', value.Organizer);
                         modal.find('p.modal-description').empty().append(value.Description.replace(/\n/g, "<br />"));
                         modal.find('p.modal-organizer').empty().append(value.Organizer);
                         modal.find('span.address').empty()
@@ -140,4 +141,7 @@ $(document).ready(function() {
         google.maps.event.trigger(map, "resize");
 
     });
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip({trigger: "hover"})
+    })
 });

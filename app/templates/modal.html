@@ -20,7 +20,7 @@
                 <div class="row col-lg-12">
                     <div class="col-lg-4 title">
                         <!--Here I added a sample image. If I have enough time I will try to display images from fb API -->
-                        <img src="{{ url_for('static', filename='images/pole.jpg') }}">
+                        <img src="{{ url_for('static', filename='images/r3.svg') }}">
                     </div>
                     <div class="col-lg-8">
                         <h5 class="modal-title mr-2" id="exampleModalLabel">{{ event.Type }}</h5></div>
@@ -41,16 +41,17 @@
                     {{ event.Description | replace('\n', '</br>')}}
 
                 </p>{% endautoescape %}</div>
+            </br>
                 <div><p class="modal-organizer ml-4 mr-4">{{ event.Organizer }}</p>
                     <p class="modal-address ml-4 mr-4"><img
                             src="{{ url_for('static', filename='icons/map-location.svg') }}" class="location-icon"
                             aria-hidden="true">
-                        <span class="address">  {{ event.AddressLine1 }} </br>    {{ event.City }} {{ event.AddressLine2 }}</span>
-                        {{"decoupled-map"|googlemap_html(event.Latitude, event.Longitude) }}</p></div>
+                        <span class="address">  {{ event.AddressLine1 }} </br>    {{ event.City }} {{ event.AddressLine2 }}
+                        {{"decoupled-map"|googlemap_html(event.Latitude, event.Longitude) }}</span></p></div>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
