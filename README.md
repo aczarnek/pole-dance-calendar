@@ -8,6 +8,8 @@ The application is designed to have responsive design and hence functions well o
 * Python 
 * All the packages from the requirements.txt file
 
+A complete list of all technologies used in the project can be found in the [Wiki](https://github.com/aczarnek/pole-dance-calendar/wiki/Technologies)
+
 ## Documentation
 
 The project has been extensively documented in the [Wiki](https://github.com/aczarnek/pole-dance-calendar/wiki). Here is a brief overview of what can be found there. Click on the desired links for more information.
